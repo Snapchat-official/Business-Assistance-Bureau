@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business Assistance Bureau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Business Assistance Bureau</h1>
+  <p>Your complete guide to starting, running, and growing a business</p>
+</header>
+
+<nav id="nav" class="hidden">
+  <a onclick="showPage('dashboard')">Dashboard</a>
+  <a onclick="showPage('startup')">Startup</a>
+  <a onclick="showPage('maintenance')">Maintenance</a>
+  <a onclick="showPage('finance')">Finance</a>
+  <a onclick="logout()">Logout</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="card">
+  <h2>Welcome</h2>
+  <p>Premium business guidance for entrepreneurs and business owners.</p>
+  <button onclick="goToSubscribe()">Get Started</button>
+</section>
+
+<!-- SUBSCRIBE -->
+<section id="subscribe" class="card hidden">
+  <h2>Subscribe</h2>
+  <p>$29/month for full access to Business Assistance Bureau</p>
+  <button onclick="subscribe()">Subscribe Now</button>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="card hidden">
+  <h2>Member Dashboard</h2>
+  <p>Select a topic from the navigation above.</p>
+</section>
+
+<!-- STARTUP -->
+<section id="startup" class="card hidden">
+  <h2>Starting a Business</h2>
+  <p>Learn how to validate ideas, register your business, and launch.</p>
+</section>
+
+<!-- MAINTENANCE -->
+<section id="maintenance" class="card hidden">
+  <h2>Business Maintenance</h2>
+  <p>Operations, compliance, staffing, and long-term sustainability.</p>
+</section>
+
+<!-- FINANCE -->
+<section id="finance" class="card hidden">
+  <h2>Business Finance</h2>
+  <p>Budgeting, accounting, taxes, and funding strategies.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
